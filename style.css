@@ -1,0 +1,286 @@
+/* Cross Browser Compatability CSS */
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+
+
+
+/*********************************************************/
+/********************** Custom CSS **********************/
+/*******************************************************/
+
+p {
+	font-family: sans-serif;
+	color: black;
+}
+
+li {
+	list-style: disc inside none;
+}
+blockquote {
+  quotes: "“" "”" "‘" "’";
+  text-align: center;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 45px;
+  padding: 50px 0px 40px 0px;
+}
+blockquote:before {
+    content: open-quote;
+}
+blockquote:after {
+    content: close-quote;
+}
+
+#citation {
+	text-align: center;
+	color: white;
+	font-family: 'Amatic SC', cursive;
+	font-size: 40px;
+	padding: 0px 0px 50px 0px;
+}
+
+/*********************************************************/
+/****************** Titles and Headings *****************/
+/*******************************************************/
+
+#heading-h1 {
+	text-align: center;
+	color: white;
+	font-family: 'Amatic SC', cursive;
+	font-size: 60px;
+	padding: 25% 25% 1% 25%;
+}
+
+#about-title {
+	text-align: center;
+	margin: 3%;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	color: #669999;
+}
+
+#portfolio-title {
+	text-align: center;
+	margin: 3%;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	color: #669999;
+}
+
+#contact-title {
+	text-align: center;
+	margin: 0% 3% 3%;
+	padding: 3% 0% 0%;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	color: #669999;
+}
+
+#about-me {
+	font-family: 'Droid Serif', serif;
+}
+
+/*********************************************************/
+/********************** NAVIGATION **********************/
+/*******************************************************/
+.navigation {
+	text-align: center;
+	color: white;
+	font-family: 'Pacifico', cursive;
+	font-size: 30px;
+	margin: 1%;
+	padding: 1% 1% 12%;
+	list-style: none outside none;
+	/* -webkit-filter:blur (5px) brightness(110%); */
+}
+
+.navigation a {
+	color: white;
+	text-decoration: none;
+}
+
+.navigation li {
+	display: inline-block;
+}
+
+.nav-links {
+	display: inline-block;
+	margin: 3%;
+	padding: 5px 10px;
+	border: 3px solid LightGrey;
+}
+
+.nav-links a {
+	color: white;
+	text-decoration: none;
+}
+
+/*********************************************************/
+/*********************** SECTIONS ***********************/
+/*******************************************************/
+
+.section-1{
+	background: url(picture_library/WhereWillTheRoadTakeYou.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.section-2{
+	background: white;
+}
+
+.section-3{
+	background: url(picture_library/hairy-smoke.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.section-4{
+	background: white;
+}
+
+.section-5{
+	background: url(picture_library/gray_textured_bg.png);
+}
+
+/*********************************************************/
+/********************** Text-Boxes **********************/
+/*******************************************************/
+
+.text-box{
+	border: 3px double LightGrey;
+	margin: 1% 15% 3%;
+}
+
+#about-text {
+	border: none;
+	margin: 2%;
+	font-family: sans-serif;
+	color: black;
+}
+
+.text-box img {
+	float: left;
+	width: 20%;
+	margin: 0% 1% 0% 1%;
+	/*max-height: 100px;
+	max-width: 100px;*/
+}
+
+#portfolio-text{
+	border: none;
+	margin: 2%;
+}
+
+#contact-text{
+	border: none;
+	margin: 2%;
+	color: black;
+	text-align: center;
+}
+
+.portfolio-item {
+	
+}
+
+/*********************************************************/
+/********************* SCROLL TO TOP ********************/
+/*******************************************************/
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: LightGrey url(picture_library/top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}

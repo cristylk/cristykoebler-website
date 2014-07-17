@@ -1,0 +1,209 @@
+/* Cross Browser Compatability CSS */
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+
+
+
+/*********************************************************/
+/********************** Custom CSS **********************/
+/*******************************************************/
+p {
+	font-family: sans-serif;
+	color: black;
+}
+
+a {
+  color: blue;
+  text-decoration: none; /* no underline */
+}
+
+li {
+	display: inline-block;
+}
+
+h1 {
+	text-align: center;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-size: 45px;
+	color: white;
+}
+
+h2 {
+	text-align: center;
+	margin: 3%;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	color: #669999;
+}
+
+h3 {
+	font-family: sans-serif;
+	font-size: 25px;
+	color: #557F7F;
+}
+
+h4 {
+	font-family: sans-serif;
+	font-style: italic;
+} 
+
+/*********************************************************/
+/************************ HEADER ************************/
+/*******************************************************/
+header {
+  height: 200px;
+  /*line-height: 200px;*/
+  text-align: center;
+  background: url(picture_library/Woods.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 1170px) {
+  header {
+    height: 300px;
+    /*line-height: 300px;*/
+  }
+}
+
+/*********************************************************/
+/****************** Titles and Headings *****************/
+/*******************************************************/
+.name-and-contact {
+	margin: 0% 0% 1% 0%;
+  	padding: 1%;
+  	background-color: #5599aa;
+}
+
+#contact-info {
+	text-align: center;
+}
+
+.headlines {
+	float: left;
+	width: 20%;
+	margin: 1% 0%;
+}
+
+/*********************************************************/
+/********************** NAVIGATION **********************/
+/*******************************************************/
+.navigation{
+	text-align: center;
+	color: white;
+	font-family: 'Pacifico', cursive;
+	font-size: 30px;
+	padding: 0% 0% 3% 0%;
+	list-style: none outside none;
+	/* -webkit-filter:blur (5px) brightness(110%); */
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+.nav-links {
+	font-family: 'Pacifico', cursive;
+	display: inline-block;
+  	margin: 0.5% 3%;
+	padding: 5px 10px;
+	border: 3px solid LightGrey;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none
+  font-family: 'Pacifico', cursive;
+}
+
+/*********************************************************/
+/*********************** SECTIONS ***********************/
+/*******************************************************/
+#click-resume {
+	margin: 0% 1% 1% 75%;
+	font-weight: bold;
+}
+
+.work-content {
+	float: left;
+	padding: 1em 0;
+ 	width: 70%;
+}
+
+.accomplishments-list{
+	font-family: sans-serif;
+	color: black;
+	list-style: disc inside none;
+}
+
+.education {
+	float: left;
+	padding: 1em 0;
+  	width: 70%;
+}
+
+.skills {
+	float: left;
+	padding: 1em 0;
+  	width: 70%;
+}
+
+.links {
+	float: left;
+	padding: 1em 0;
+  	width: 70%;
+}
+

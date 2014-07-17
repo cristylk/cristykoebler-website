@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--> 
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]--> 
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]--> 
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--<html><!-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
+  <title>Cristy Koebler | Marketing and Programming Portfolio</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Amatic+SC|Pacifico|Satisfy' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="portfolio-style.css">
+  <link rel="text/javascript" href="script.js">
+
+
+</head>
+
+<body>
+
+	<header>
+	   <div id="top"></div>
+
+
+		<nav class="navbar">
+        	<ul class="navigation">
+          		<li class="nav-links"><a href="http://cristykoebler.com">Home</a></li>
+          		<li class="nav-links"><a href="#WillGoToAboutPage">About</a></li>
+          		<li class="nav-links"><a href="#portfolio-page">Portfolio</a></li>
+          		<li class="nav-links"><a href="http://cristykoebler.com/contact.html">Contact</a></li>
+        		</ul> 
+      		</nav>  
+
+	</header>
+
+	<h1>PORTFOLIO</h1>
+
+  
+	<section class="section-2">
+		<div>
+			<p>Portfolio lightbox will go here</p>
+		</div>
+	</section>
+
+	<a href="#0" class="cd-top">Top</a>
+    <!--<footer>
+
+    </footer>-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+
+    <script>
+	jQuery(document).ready(function($){
+	// browser window scroll (in pixels) after which the "back to top" link is shown
+	var offset = 300,
+		//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+		offset_opacity = 1200,
+		//duration of the top scrolling animation (in ms)
+		scroll_top_duration = 700,
+		//grab the "back to top" link
+		$back_to_top = $('.cd-top');
+
+	//hide or show the "back to top" link
+	$(window).scroll(function(){
+		( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');""
+		if( $(this).scrollTop() > offset_opacity ) { 
+			$back_to_top.addClass('cd-fade-out');
+		}
+	});
+
+	//smooth scroll to top
+	$back_to_top.on('click', function(event){
+		event.preventDefault();
+		$('body,html').animate({
+			scrollTop: 0 ,
+		 	}, scroll_top_duration
+		);
+	});
+
+	});
+	</script>
+
+	<script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  		ga('create', 'UA-26194880-1', 'auto');
+  		ga('send', 'pageview');
+
+	</script>
+
+
+</body>
+</html>

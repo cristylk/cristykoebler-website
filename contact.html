@@ -13,9 +13,6 @@
 
   <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="contact-style.css">
-  <link rel="text/javascript" href="script.js">
-
-
 </head>
 
 <body>
@@ -24,7 +21,7 @@
 	   <div id="top"></div>
 
 		<nav>
-        	<ul class="navigation">
+        	<ul id="navigation">
           		<li class="nav-links"><a href="http://cristykoebler.com">Home</a></li>
           		<li class="nav-links"><a href="http://cristykoebler.com/about.html">About</a></li>
           		<li class="nav-links"><a href="http://cristykoebler.com/portfolio.html">Portfolio</a></li>
@@ -37,9 +34,42 @@
 
 	<section class="contact-text">
 		<div>
-			<p id="about-text">Want to grab a coffee and cookie?</p>
-			<p id="email-text">Email me</p>
+			<p id="about-text">Want to grab a coffee?</p>
+			<p id="email-text">Email Me</p><br><br>
 				<!-- Contact form here -->
+			<form id="email-form" name="contactform" method="post" action="send_form_email.php">
+				<table width="450px">
+ 					<tr>
+ 						<td valign="top">
+ 							<label for="name">Name</label>
+ 						</td>
+ 						<td valign="top">
+ 							<input  type="text" name="name" maxlength="50" size="30">
+ 						</td>
+ 					</tr> 
+					<tr>
+ 						<td valign="top">
+ 							<label for="email">Email *</label>
+ 						</td>
+ 						<td valign="top">
+ 							<input  type="text" name="email" maxlength="80" size="30">
+ 						</td>
+ 					</tr>
+ 					<tr>
+ 						<td valign="top">
+ 							<label for="message">Message *</label>
+ 						</td>
+ 						<td valign="top">
+ 							<textarea  name="message" maxlength="1000" cols="25" rows="6"></textarea>
+ 						</td>
+ 					</tr>
+ 					<tr>
+ 						<td colspan="2" style="text-align:center">
+ 							<input id="submit-button" type="submit" value="Submit">
+ 						</td>
+ 					</tr>
+ 				</table>
+ 			</form>	
 
 			<aside>Or find me here
 				<div class="icons">
@@ -55,13 +85,14 @@
 		</div>
 	</section>
 
+	<section id="final"></section>
+
 	<a href="#0" class="cd-top">Top</a>
     <!--<footer>
 
     </footer>-->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
 
 
     <script>
@@ -91,7 +122,6 @@
 		 	}, scroll_top_duration
 		);
 	});
-
 	});
 	</script>
 
@@ -103,7 +133,6 @@
 
   		ga('create', 'UA-26194880-1', 'auto');
   		ga('send', 'pageview');
-
 	</script>
 
 

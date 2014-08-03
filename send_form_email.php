@@ -116,7 +116,7 @@ $headers = 'From: '.$email_from."\r\n".
  
  
  
-Thank's for contacting me. I'll get back to you shortly!
+Thanks for contacting me. I'll get back to you shortly!
  
  
  

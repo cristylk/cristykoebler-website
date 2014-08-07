@@ -55,15 +55,12 @@ input, select { vertical-align: middle; }
 p {
 	font-family: sans-serif;
 	color: black;
+	font-size: 16px;
 }
 
 a {
   color: blue;
   text-decoration: none; /* no underline */
-}
-
-li {
-	display: inline-block;
 }
 
 h1 {
@@ -77,15 +74,15 @@ h2 {
 	text-align: center;
 	margin: 3%;
 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: 500;
-	color: #669999;
+	color: MediumSeaGreen;
 }
 
 h3 {
-	font-family: sans-serif;
-	font-size: 25px;
-	color: #557F7F;
+	font-family: 'Droid Serif', serif;
+	font-size: 20px;
+	color: #445566;
 }
 
 h4 {
@@ -120,17 +117,13 @@ header {
 .name-and-contact {
 	margin: 0% 0% 1% 0%;
   	padding: 1%;
-  	background-color: #5599aa;
-}
-
-#contact-info {
-	text-align: center;
+  	background-color: #aabbcc;
 }
 
 .headlines {
 	float: left;
 	width: 20%;
-	margin: 1% 0%;
+	margin: 2% 0%;
 }
 
 /*********************************************************/
@@ -143,12 +136,8 @@ header {
 	font-size: 30px;
 	padding: 0% 0% 3% 0%;
 	list-style: none outside none;
+	text-decoration: none;
 	/* -webkit-filter:blur (5px) brightness(110%); */
-}
-
-.navigation a {
-  color: white;
-  text-decoration: none;
 }
 
 .navigation li {
@@ -156,7 +145,6 @@ header {
 }
 
 .nav-links {
-	font-family: 'Pacifico', cursive;
 	display: inline-block;
   	margin: 0.5% 3%;
 	padding: 5px 10px;
@@ -175,6 +163,8 @@ header {
 #click-resume {
 	margin: 0% 1% 1% 75%;
 	font-weight: bold;
+	color: black;
+	
 }
 
 .work-content {
@@ -207,3 +197,52 @@ header {
   	width: 70%;
 }
 
+/*********************************************************/
+/********************* SCROLL TO TOP ********************/
+/*******************************************************/
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: LightGrey url(picture_library/top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}

@@ -73,7 +73,7 @@ h1 {
 	font-size: 30px;
 	font-weight: 500;
 	color: #669999;
-  	text-align: center;
+  text-align: center;
 }
 
 
@@ -112,21 +112,12 @@ header h1 {
 /*******************************************************/
 .navigation {
 	text-align: center;
-	color: white;
-	font-family: 'Pacifico', cursive;
 	font-size: 30px;
-	padding: 0% 0% 3% 0%;
+	/*padding: 0% 0% 3% 0%;*/
 	list-style: none outside none;
+  width: 100%;
+
 	/* -webkit-filter:blur (5px) brightness(110%); */
-}
-
-.navigation a {
-	color: white;
-	text-decoration: none;
-}
-
-.navigation li {
-	display: inline-block;
 }
 
 .nav-links {
@@ -137,7 +128,7 @@ header h1 {
 }
 
 .nav-links a {
-  	color: white;
+  	color: LightGrey;
   	text-decoration: none;
   	font-family: 'Pacifico', cursive;
 }

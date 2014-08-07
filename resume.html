@@ -7,26 +7,24 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
-  <title>Cristy Koebler | Marketing and Programming Portfolio</title>
+  <title>Cristy Koebler | Resume | Marketing & Web Development Portfolio</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Amatic+SC|Pacifico|Satisfy' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Pacifico' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="resume-style.css">
-  <link rel="text/javascript" href="script.js">
-
-
 </head>
 
 <body>
 
 	<header>
+
 	   <div id="top"></div>
 
-      <nav class="navbar">
+      <nav>
         <ul class="navigation">
           <li class="nav-links"><a href="http://cristykoebler.com">Home</a></li>
-          <li class="nav-links"><a href="#WillGoToAboutPage">About</a></li>
+          <li class="nav-links"><a href="http://cristykoebler.com/about.html">About</a></li>
           <li class="nav-links"><a href="http://cristykoebler.com/portfolio.html">Portfolio</a></li>
           <li class="nav-links"><a href="http://cristykoebler.com/contact.html">Contact</a></li>
         </ul> 
@@ -37,12 +35,11 @@
 
     <section class="name-and-contact">
       <h1>Cristy Koebler</h1><br>
-      <p id="contact-info">email address here | phone number here</p>
     </section>
     
 
     <section class="click-here">
-      <p id="click-resume"> Click here for downloadable version</p>
+      <p id="click-resume"><a href="http://cristykoebler.com/CristyKoebler_Resume.pdf">Click here for downloadable version</a></p>
     </section>  
 
     <div class="headlines">
@@ -53,7 +50,7 @@
       <br>
       <h3>Hemera Marketing, Owner</h3>
       <h4>San Diego, CA and Pittsburgh, PA | 10/11 - Present</h4>
-
+      <br>
       <p>Marketing consulting company offering website and materials design, copywriting, graphics, marketing plan development, and strategy to small businesses.</p><br>
 
       <ul class="accomplishments">
@@ -69,7 +66,7 @@
 
       <h3>Better Business Bureau San Diego, Marketing and Special Events Coordinator</h3>
       <h4>San Diego, CA | 4/07 - 1/11</h4>
-
+      <br>
       <p>Produced original website content, developed marketing pieces and email blasts, oversaw social media, coordinated events, and supervised marketing team.</p><br>
 
       <ul class="accomplishments">
@@ -86,7 +83,7 @@
 
       <h3>GSR Design, Inc., Co-founder and Patent Designer</h3>
       <h4>Pittsburgh, PA and San Diego, CA | 10/05 - 10/10</h4>
-
+      <br>
       <p>Designed marketing materials, managed website, and produced patent illustrations for inventors and patent lawyers.</p><br>
 
       <ul class="accomplishments">
@@ -116,7 +113,10 @@
       <h4>Adobe Photoshop</h4>
       <h4>Adobe Illustrator</h4>
       <h4>HTML and CSS</h4>
-      <h4>Experience with Java, Visual Basic, C++, Ruby, sales and CRM databases.</h4>
+      <h4>Ruby</h4>
+      <h4>C++</h4>
+      <h4>Visual Basic</h4>
+      <h4>Sales & CRM databases</h4>
     </section>
 
     <div class="headlines">
@@ -127,6 +127,8 @@
       <br>
       <p>Links to stuff will go here</p>
     </section> 
+
+    <a href="#0" class="cd-top">Top</a>
 
     <!--<footer>
     
@@ -141,6 +143,36 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-26194880-1', 'auto');
     ga('send', 'pageview');
+  </script>
+
+  <script>
+    jQuery(document).ready(function($){
+  // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+  //hide or show the "back to top" link
+  $(window).scroll(function(){
+    ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');""
+    if( $(this).scrollTop() > offset_opacity ) { 
+      $back_to_top.addClass('cd-fade-out');
+    }
+  });
+
+  //smooth scroll to top
+  $back_to_top.on('click', function(event){
+    event.preventDefault();
+    $('body,html').animate({
+      scrollTop: 0 ,
+      }, scroll_top_duration
+    );
+  });
+  });
   </script>
 
 </body>

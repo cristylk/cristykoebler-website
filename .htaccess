@@ -1,0 +1,38 @@
+# Use PHP5.4 as default
+AddHandler application/x-httpd-php54 .php
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html
+
+
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^cristykoebler\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.cristykoebler\.com$
+RewriteRule ^/?$ "http\:\/\/www\.hemeramarketing\.com\/" [R=302,L]
+
+
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

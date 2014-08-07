@@ -65,7 +65,7 @@ html * {
 
 body {
   font-size: 100%;
-  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-family: 'Droid Serif', serif;
   color: #7f8c97;
   background-color: #e9f0f5;
 }
@@ -90,8 +90,13 @@ h1 {
 }
 
 h2 {
-  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-family: 'Droid Serif', serif;
   font-size: 25px;
+}
+
+h3 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 30px;
 }
 
 /*********************************************************/
@@ -120,25 +125,17 @@ header {
   height: 200px;
   /*line-height: 200px;*/
   text-align: center;
-  background: url(picture_library/Woods.png) no-repeat center center fixed; 
+  background: url(picture_library/Field.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-header h1 {
-  color: white;
-  font-size: 18px;
-  font-size: 1.125rem;
-}
+
 @media only screen and (min-width: 1170px) {
   header {
     height: 300px;
     /*line-height: 300px;*/
-  }
-  header h1 {
-    font-size: 24px;
-    font-size: 1.5rem;
   }
 }
 
@@ -153,15 +150,6 @@ header h1 {
   padding: 0% 0% 3% 0%;
   list-style: none outside none;
   /* -webkit-filter:blur (5px) brightness(110%); */
-}
-
-.navigation a {
-  color: white;
-  text-decoration: none;
-}
-
-.navigation li {
-  display: inline-block;
 }
 
 .nav-links {
@@ -356,6 +344,8 @@ header h1 {
 }
 .timeline-content h2 {
   color: #303e49;
+  font-family: 'Droid Serif', serif;
+  font-size: 25px;
 }
 .timeline-content p, .timeline-content .cd-read-more, .timeline-content .timeline-date {
   font-size: 13px;
@@ -382,6 +372,9 @@ header h1 {
   float: left;
   padding: .8em 0;
   opacity: .7;
+  font-family: 'Droid Serif', serif;
+  font-size: 25px;
+}
 }
 .timeline-content::before {
   content: '';
@@ -586,20 +579,4 @@ header h1 {
     -o-transform: translateX(0);
     transform: translateX(0);
   }
-}
-
-
-/*********************************************************/
-/************************ FOOTER ************************/
-/*******************************************************/
-.footer {
-  text-align:center;
-  color: black;
-    clear:both;
-    margin: 3%;
-}
-
-#footer-text {
-  color: black;
-  font-size: 14px;
 }

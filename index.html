@@ -38,7 +38,7 @@
 
 		<div class="text-box">
 			<div>
-				<img src="http://cristykoebler.com/picture_library/IMG_1303.2.JPG" alt="Me" />
+				<img src="http://cristykoebler.com/picture_library/CristyK.PNG" alt="Me" />
 			</div>
 
 			<div id="vertical-line">
@@ -51,7 +51,7 @@
 				<h4>A few things about me:</h4><br>
 
 				<ul>
-					<li class="about-list-items">My love of cheese knows no bounds. (Ask me about my cheese baby story.)</li>
+					<li class="about-list-items">My love of cheese knows no bounds.</li>
 					<li class="about-list-items">I'm freakishly organized. My to-do lists are epic.</li>
 					<li class="about-list-items">I really enjoy learning new things and have been in one class or another since preschool. Check out my progress (and detours) <a href="http://cristykoebler.com/timeline.html">here.</a></li>
 				</ul><br>
@@ -94,25 +94,66 @@
 	</section>
 	
 	<section class="section-5">
+
 		<h3 id="contact-title">CONTACT</h3>
 		
 		<div>
 			<h2 id="contact-text">Want to get in touch?</h2><br><br>
-			
-			<p id="email"><a href="mailto:cristy.koebler@gmail.com">Email me</a></p><br><br>
 
-			<!--Social links here-->
-			<div class="social-icons">
-				<a class="social-icons" id="email-icon" href="mailto:cristy.koebler@gmail.com" title="Email me"></a>
-                <a class="social-icons" id="linkedIn" href="http://www.linkedin.com/in/cristykoebler/" title="Cristy Koebler on LinkedIn"></a>
-                <a class="social-icons" id="twitter" href="https://twitter.com/CristyKoebler" title="Cristy Koebler on Twitter"></a>
-                <a class="social-icons" id="gitHub" href="https://github.com/cristylk/" title="Cristy Koebler on GitHub"></a>
-            </div>
+			<p id="email-text">Email Me</p><br><br>
+				<!-- Contact form here -->
+			<form id="email-form" name="contactform" method="post" action="send_form_email.php">
+				<table width="450px">
+ 					<tr>
+ 						<td valign="top">
+ 							<label for="name">Name</label>
+ 						</td>
+ 						<td valign="top">
+ 							<input  type="text" name="name" maxlength="50" size="30">
+ 						</td>
+ 					</tr> 
+					<tr>
+ 						<td valign="top">
+ 							<label for="email">Email *</label>
+ 						</td>
+ 						<td valign="top">
+ 							<input  type="text" name="email" maxlength="80" size="30">
+ 						</td>
+ 					</tr>
+ 					<tr>
+ 						<td valign="top">
+ 							<label for="message">Message *</label>
+ 						</td>
+ 						<td valign="top">
+ 							<textarea  name="message" maxlength="1000" cols="25" rows="6"></textarea>
+ 						</td>
+ 					</tr>
+ 					<tr>
+ 						<td colspan="2" style="text-align:center">
+ 							<input id="submit-button" type="submit" value="Submit">
+ 						</td>
+ 					</tr>
+ 				</table>
+ 			</form>	
+
+			<aside>Or find me here
+				<div class="icons">
+					<a href="http://www.linkedin.com/in/cristykoebler"><img src="picture_library/icons/linkedin-32.png" alt="LinkedIn icon" border="0" target="_blank"></a>
+				</div>
+				<div class="icons">
+					<a href="http://twitter.com/CristyKoebler"><img src="picture_library/icons/twitter-32.png" alt="Twitter icon" border="0" target="_blank"></a>
+				</div>
+				<div class="icons">
+					<a href="http://github.com/cristylk"><img src="picture_library/icons/github-32.png" alt="GitHub icon" border="0" target="_blank"></a>
+				</div>
+			</aside>
+			<br><br><br><br><br><br><br><br>
 		</div>
 
 		<!--<h2 id="top-button"><a data-scroll href="#top">TOP</a></h2>-->
-	</section>		
+	</section>	
 
+	<section id="final"></section>
 	<a href="#0" class="cd-top">Top</a>
     
     <!--<footer>

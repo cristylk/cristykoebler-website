@@ -115,8 +115,7 @@ $headers = 'From: '.$email_from."\r\n".
 <!-- include your own success html here -->
  
  
- 
-Thanks for contacting me. I'll get back to you shortly!
+<p style="font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; font-size:20px;">Thanks for contacting me. I'll get back to you shortly!</p>
  
  
  

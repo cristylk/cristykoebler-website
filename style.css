@@ -73,7 +73,7 @@ li {
 }
 
 blockquote {
-  quotes: "“" "”" "‘" "’";
+  quotes: "â€œ" "â€" "â€˜" "â€™";
   text-align: center;
   color: white;
   font-family: 'Amatic SC', cursive;
@@ -95,6 +95,10 @@ blockquote:after {
 	font-family: 'Amatic SC', cursive;
 	font-size: 40px;
 	padding: 0px 0px 50px 0px;
+}
+
+.icons {
+  margin: 2px;
 }
 
 /*********************************************************/
@@ -135,6 +139,12 @@ blockquote:after {
 	font-size: 30px;
 	font-weight: 500;
 	color: #669999;
+}
+
+#email-text {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 20px;
+  text-align: center;
 }
 
 /*********************************************************/
@@ -225,6 +235,35 @@ blockquote:after {
 	background: url(picture_library/gray_textured_bg.png);
 }
 
+aside {
+  	float: right;
+  	margin: 0% 15%;
+  	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  	text-align: center;
+  	color: black;
+  	background: url(picture_library/gray_textured_bg.png);
+}
+
+#email-form {
+ 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+ 	font-size: 16px;
+ 	margin: 0% 35%;
+	background: url(picture_library/gray_textured_bg.png);
+	position: absolute;
+}
+
+#submit-button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#final {
+  clear: both;
+  padding: 5%;
+  background: url(picture_library/gray_textured_bg.png);
+}
+
 /*********************************************************/
 /********************** Text-Boxes **********************/
 /*******************************************************/
@@ -237,7 +276,11 @@ blockquote:after {
 .text-box img {
 	float: left;
 	width: 25%;
-	margin: 10% 2% 50% 2%;
+	margin: 10% 2% 5% 2%;
+	border-radius: 10px;
+ 	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
 	/*max-height: 100px;
 	max-width: 100px;*/
 }
@@ -269,11 +312,16 @@ blockquote:after {
 	width: 200px;
 	height: 200px;
 	display: inline-block;
-	margin: 5%;
+	margin: 4%;
+    border-radius: 10px;
+ 	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
 }
 
 #item-1 {
 	background: url(picture_library/portfolio_thumbs/ThisWebsite.png) no-repeat top left;
+
 }
 
 #item-2 {
@@ -299,44 +347,6 @@ blockquote:after {
 #contact-text {
 	color: black;
 	text-align: center;
-}
-
-/*********************************************************/
-/************************* ICONS ************************/
-/*******************************************************/
-
-.social-icons {
-	display: inline-block;
-  	margin-top: 0%;
- 	margin-right: 3%;
-  	width: 75%;
-}
-
-.social-icons a {
-  	height:32px;
-  	width: 32px;
-}
-
-#email-icon {
-	background: url(picture_library/icons/email-32.png) no-repeat top left;
-}
-
-#twitter {
-	background: url(picture_library/icons/twitter-32.png) no-repeat top left;
-}
-
-#linkedIn {
-	background: url(picture_library/icons/linkedin-32.png) no-repeat top left;
-}
-
-#gitHub {
-	background: url(picture_library/icons/github-32.png) no-repeat top left;
-}
-
-#email {
-  text-align: center;
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-  font-size: 20px;
 }
 
 /*********************************************************/
@@ -388,3 +398,9 @@ blockquote:after {
     bottom: 30px;
   }
 }
+
+
+
+
+
+

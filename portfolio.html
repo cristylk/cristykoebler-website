@@ -11,10 +11,8 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Amatic+SC|Pacifico|Satisfy' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Pacifico' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="portfolio-style.css">
-
-
 </head>
 
 <body>
@@ -22,25 +20,61 @@
 	<header>
 	   <div id="top"></div>
 
-
 		<nav class="navbar">
         	<ul class="navigation">
           		<li class="nav-links"><a href="http://cristykoebler.com">Home</a></li>
-          		<li class="nav-links"><a href="#WillGoToAboutPage">About</a></li>
-          		<li class="nav-links"><a href="#portfolio-page">Portfolio</a></li>
+          		<li class="nav-links"><a href="http://cristykoebler.com/about.html">About</a></li>
+          		<li class="nav-links"><a href="#ThisIsThePortfolioPage">Portfolio</a></li>
           		<li class="nav-links"><a href="http://cristykoebler.com/contact.html">Contact</a></li>
         		</ul> 
       		</nav>  
-
 	</header>
 
 	<h1>PORTFOLIO</h1>
 
-  
 	<section class="section-2">
-		<div>
-			<p>Portfolio lightbox will go here</p>
+
+		<div class="GITheWall">
+			<ul>
+				<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/CristyKoeblerDotCom.png">
+          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/CristyKoeblerDotCom200.png" />
+        		</li>
+        		<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/KairosInstrumentsDotCom.png">
+          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/KairosInstrumentsDotCom200.png" />
+        		</li>
+        		<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/LoveTailsDotCom.png">
+          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/LoveTailsDotCom200.png" />
+        		</li>
+        		<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/GSRLeonardoPatent.png">
+          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/GSRLeonardoPatent200.png" />
+        		</li>
+				<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/KairosBrochure.png">
+          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/KairosBrochure200.png" />
+        		</li>
+        		<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/USDGuestHouse.png">
+          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/USDGuestHouse200.png" />
+        		</li>
+        		<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/TKPubInTheShire.png">
+          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/TKPubInTheShire200.png" />
+        		</li>
+        		<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/SDACFbook.png">
+          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/SDACFbook200.png" />
+        		</li>
+        		<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/BBBWebsite.png">
+          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/BBBWebsite200.png" />
+        		</li>
+        		<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/Marketing-Program.png">
+          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/Marketing-Program200.png" />
+        		</li>
+        		<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/BBBGolfClassic.png">
+          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/BBBGolfClassic200.png" />
+        		</li>
+        		<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/BBBTwitter.png">
+          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/BBBTwitter200.png" />
+        		</li>
+			</ul>
 		</div>
+
 	</section>
 
 	<a href="#0" class="cd-top">Top</a>
@@ -51,6 +85,8 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
   	<script src="http://cristykoebler.com/jquery_plugins/garand-sticky/jquery.sticky.js"></script>
+
+  	<script src="http://cristykoebler.com/jquery_plugins/wall_lightbox/jQuery.GI.TheWall.js"></script>
 
     <script>
 	jQuery(document).ready(function($){
@@ -94,10 +130,19 @@
 
 	</script>
 
-	<script>
+	<!--<script>
   		$(document).ready(function(){
     		$('.navbar').sticky({topSpacing:0});
   		});
+	</script>-->
+
+	<script>var wall = $('.GITheWall').GITheWall({
+      nextButtonClass: 'fa fa-arrow-right',
+      prevButtonClass: 'fa fa-arrow-left',
+      closeButtonClass: 'fa fa-times',
+      margin: {top: 30, bottom: 30},
+      responsive: true
+  	});
 	</script>
 
 

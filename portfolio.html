@@ -8,142 +8,174 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
   <title>Cristy Koebler | Marketing and Web Development Portfolio</title>
-  <meta name="description" content="">
+  <meta name="description" content="Cristy Koebler | Marketing and Web Development Portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Pacifico|Karma' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="portfolio-style.css">
+  <script src="/jquery_plugins/grid/modernizr.custom.js"></script>
+
 </head>
 
 <body>
 
-	<header>
-	   <div id="top"></div>
+  <header>
+    <div id="top"></div>
 
-		<nav class="navbar">
-        	<ul class="navigation">
-          		<li class="nav-links"><a href="http://cristykoebler.com">Home</a></li>
-          		<li class="nav-links"><a href="http://cristykoebler.com/about.html">About</a></li>
-          		<li class="nav-links"><a href="#ThisIsThePortfolioPage">Portfolio</a></li>
-          		<li class="nav-links"><a href="http://cristykoebler.com/contact.html">Contact</a></li>
-        		</ul> 
-      		</nav>  
-	</header>
+    <nav>
+      <ul class="navigation">
+        <li class="nav-links"><a href="http://cristykoebler.com">Home</a></li>
+        <li class="nav-links"><a href="http://cristykoebler.com/about.html">About</a></li>
+        <li class="nav-links"><a href="#ThisIsThePortfolioPage">Portfolio</a></li>
+        <li class="nav-links"><a href="http://cristykoebler.com/contact.html">Contact</a></li>
+      </ul> 
+    </nav>
 
-	<h1>PORTFOLIO</h1>
+  </header>
 
-	<section class="section-2">
+  <div class="container">
 
-		<div class="GITheWall">
-			<ul>
-				<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/CristyKoeblerDotCom.png">
-          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/CristyKoeblerDotCom200.png" />
-        		</li>
-        		<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/KairosInstrumentsDotCom.png">
-          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/KairosInstrumentsDotCom200.png" />
-        		</li>
-        		<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/LoveTailsDotCom.png">
-          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/LoveTailsDotCom200.png" />
-        		</li>
-        		<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/GSRLeonardoPatent.png">
-          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/GSRLeonardoPatent200.png" />
-        		</li>
-				<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/KairosBrochure.png">
-          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/KairosBrochure200.png" />
-        		</li>
-        		<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/USDGuestHouse.png">
-          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/USDGuestHouse200.png" />
-        		</li>
-        		<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/TKPubInTheShire.png">
-          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/TKPubInTheShire200.png" />
-        		</li>
-        		<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/SDACFbook.png">
-          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/SDACFbook200.png" />
-        		</li>
-        		<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/BBBWebsite.png">
-          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/BBBWebsite200.png" />
-        		</li>
-        		<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/Marketing-Program.png">
-          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/Marketing-Program200.png" />
-        		</li>
-        		<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/BBBGolfClassic.png">
-          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/BBBGolfClassic200.png" />
-        		</li>
-        		<li data-contenttype="image" data-href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/BBBTwitter.png">
-          			<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/200x200/BBBTwitter200.png" />
-        		</li>
-			</ul>
-		</div>
+    <div class="main">
 
-	</section>
+      <h1>PORTFOLIO</h1>
+    <!-- Least Gallery: Fullscreen Preview -->
+      <ul id="og-grid" class="og-grid">
 
-	<a href="#0" class="cd-top">Top</a>
+        <li>
+          <a href="http://cristykoebler.com"  data-largesrc="/picture_library/portfolio_thumbs/Lightbox/CristyKoeblerDotCom.png" data-title="CristyKoebler.com" data-description="This website, of course! Everything is coded from scratch - HTML, CSS, PHP, jQuery, and Javascript, to name a few.">
+            <img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/250x250/CristyKoeblerDotCom250.png" alt="This Website" />
+          </a>
+        </li>
+
+        <li>
+          <a href="http://www.kairosinstruments.com" data-largesrc="/picture_library/portfolio_thumbs/Lightbox/KairosInstrumentsDotCom.png" data-title="Kairos Instruments Website" data-description="Built on a Wordpress theme, this site was customized using CSS and PHP.">
+            <img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/250x250/KairosInstrumentsDotCom250.png" alt="Kairos Instruments Website" />
+          </a>
+        </li>
+
+        <li>
+          <a href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/LoveTailsDotCom.png" data-largesrc="/picture_library/portfolio_thumbs/Lightbox/LoveTailsDotCom.png" data-title="Love Tails Pet Care Website" data-description="Built on a Wordpress theme, this site was customized using CSS and PHP. The site included a blog so that the client could post updates about her dog sitting business.">
+            <img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/250x250/LoveTailsDotCom250.png" alt="Love Tails Pet Care" />
+          </a>
+        </li>
+
+        <li>
+          <a href="http://gsrdesignservices.com/" data-largesrc="/picture_library/portfolio_thumbs/Lightbox/GSRLeonardoPatent.png" data-title="Patent Illustrations" data-description="Produced federally compliant patent illustrations using Adobe Illustrator.">
+            <img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/250x250/GSRLeonardoPatent250.png" alt="Patent Illustration" />
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.kairosinstruments.com/products/" data-largesrc="/picture_library/portfolio_thumbs/Lightbox/KairosBrochure.png" data-title="Kairos Instruments brochure" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at turpis elementum. ">
+            <img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/250x250/KairosBrochure250.png" alt="Kairos Instruments brochure" />
+          </a>
+        </li>
+
+        <li>
+          <a href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/USDGuestHouse.png" data-largesrc="/picture_library/portfolio_thumbs/Lightbox/USDGuestHouse.png" data-title="USD Marketing" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at turpis elementum. ">
+            <img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/250x250/USDGuestHouse250.png" alt="USD Marketing" />
+          </a>
+        </li>
+
+        <li>
+          <a href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/TKPubInTheShire.png" data-largesrc="/picture_library/portfolio_thumbs/Lightbox/TKPubInTheShire.png" data-title="Tilted Kilt Marketing" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at turpis elementum. ">
+            <img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/250x250/TKPubInTheShire250.png" alt="Tilted Kilt Marketing" />
+          </a>
+        </li>
+
+        <li>
+          <a href="http://www.facebook.com/SanDiegoAdClub" data-largesrc="/picture_library/portfolio_thumbs/Lightbox/SDACFbook.png" data-title="San Diego Ad Club Social Media Campaign" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at turpis elementum. ">
+            <img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/250x250/SDACFbook250.png" alt="San Diego Ad Club Social Media Campaign" />
+          </a>
+        </li>
+
+        <li>
+          <a href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/BBBWebsite.png" data-largesrc="/picture_library/portfolio_thumbs/Lightbox/BBBWebsite.png" data-title="BBB Website Content" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at turpis elementum. ">
+            <img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/250x250/BBBWebsite250.png" alt="BBB Website Content" />
+          </a>
+        </li>
+
+        <li>
+          <a href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/Marketing-Program.png" data-largesrc="/picture_library/portfolio_thumbs/Lightbox/Marketing-Program.png" data-title="BBB Marketing Program" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at turpis elementum. ">
+            <img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/250x250/Marketing-Program250.png" alt="BBB Marketing Program" />
+          </a>
+        </li>
+      
+        <li>
+          <a href="http://www.bbb.org/sdoc/get-involved/attend-an-event/gerry-wilson-golf-classic/" data-largesrc="/picture_library/portfolio_thumbs/Lightbox/BBBGolfClassic.png" data-title="BBB Golf Classic" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at turpis elementum. ">
+            <img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/250x250/BBBGolfClassic250.png" alt="BBB Golf Classic" />
+          </a>
+        </li>
+
+        <li>
+          <a href="https://twitter.com/SanDiegoBBB" data-largesrc="/picture_library/portfolio_thumbs/Lightbox/BBBTwitter.png" data-title="BBB Social Media" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at turpis elementum. ">
+            <img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/250x250/BBBTwitter250.png" alt="BBB Social Media" />
+          </a>
+        </li>
+      
+      </ul>
+
+    </div>
+
+  </div>
+
+  <a href="#0" class="cd-top">Top</a>
     <!--<footer>
 
     </footer>-->
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-  	<script src="http://cristykoebler.com/jquery_plugins/garand-sticky/jquery.sticky.js"></script>
+  <script src="http://cristykoebler.com/jquery_plugins/smooth-scroll-master/dist/js/smooth-scroll.js"></script>
 
-  	<script src="http://cristykoebler.com/jquery_plugins/wall_lightbox/jQuery.GI.TheWall.js"></script>
+  <script src="http://cristykoebler.com/jquery_plugins/grid/grid.js"></script>
+  
+  <script>
+      $(function() {
+        Grid.init();
+      });
+  </script>
 
-    <script>
-	jQuery(document).ready(function($){
-	// browser window scroll (in pixels) after which the "back to top" link is shown
-	var offset = 300,
-		//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
-		offset_opacity = 1200,
-		//duration of the top scrolling animation (in ms)
-		scroll_top_duration = 700,
-		//grab the "back to top" link
-		$back_to_top = $('.cd-top');
+  <script>
+  jQuery(document).ready(function($){
+  // browser window scroll (in pixels) after which the "back to top" link is shown
+  var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
 
-	//hide or show the "back to top" link
-	$(window).scroll(function(){
-		( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');""
-		if( $(this).scrollTop() > offset_opacity ) { 
-			$back_to_top.addClass('cd-fade-out');
-		}
-	});
+  //hide or show the "back to top" link
+  $(window).scroll(function(){
+    ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');""
+    if( $(this).scrollTop() > offset_opacity ) { 
+      $back_to_top.addClass('cd-fade-out');
+    }
+  });
 
-	//smooth scroll to top
-	$back_to_top.on('click', function(event){
-		event.preventDefault();
-		$('body,html').animate({
-			scrollTop: 0 ,
-		 	}, scroll_top_duration
-		);
-	});
+  //smooth scroll to top
+  $back_to_top.on('click', function(event){
+    event.preventDefault();
+    $('body,html').animate({
+      scrollTop: 0 ,
+      }, scroll_top_duration
+    );
+  });
 
-	});
-	</script>
+  });
+  </script>
 
-	<script>
-  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  		ga('create', 'UA-26194880-1', 'auto');
-  		ga('send', 'pageview');
-
-	</script>
-
-	<!--<script>
-  		$(document).ready(function(){
-    		$('.navbar').sticky({topSpacing:0});
-  		});
-	</script>-->
-
-	<script>var wall = $('.GITheWall').GITheWall({
-      nextButtonClass: 'fa fa-arrow-right',
-      prevButtonClass: 'fa fa-arrow-left',
-      closeButtonClass: 'fa fa-times',
-      margin: {top: 30, bottom: 30},
-      responsive: true
-  	});
-	</script>
+      ga('create', 'UA-26194880-1', 'auto');
+      ga('send', 'pageview');
+  </script>
 
 
 </body>

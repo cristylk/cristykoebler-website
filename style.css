@@ -52,10 +52,29 @@ input, select { vertical-align: middle; }
 /*********************************************************/
 /********************** Custom CSS **********************/
 /*******************************************************/
+html { height: 100%; }
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: black;
+    overflow: scroll;
+    overflow-x: hidden;
+}
 
 p {
-	font-family: sans-serif;
-	color: black;
+    font-size: 18px;
 }
 
 a {
@@ -68,12 +87,8 @@ h2 {
   color: #669999;
 }
 
-li {
-	list-style: disc inside none;
-}
-
 blockquote {
-  quotes: "â€œ" "â€" "â€˜" "â€™";
+  quotes: "“" "”" "‘" "’";
   text-align: center;
   color: white;
   font-family: 'Amatic SC', cursive;
@@ -90,11 +105,11 @@ blockquote:after {
 }
 
 #citation {
-	text-align: center;
-	color: white;
-	font-family: 'Amatic SC', cursive;
-	font-size: 40px;
-	padding: 0px 0px 50px 0px;
+  text-align: center;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  padding: 0px 0px 50px 0px;
 }
 
 .icons {
@@ -106,43 +121,43 @@ blockquote:after {
 /*******************************************************/
 
 #main-heading {
-	text-align: center;
-	color: white;
-	font-family: 'Amatic SC', cursive;
-	font-size: 60px;
-	padding: 25% 25% 1% 25%;
+  text-align: center;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px;
+  padding: 25% 25% 1% 25%;
 }
 
 #about-title {
-	text-align: center;
-	margin: 3%;
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-	font-size: 30px;
-	font-weight: 500;
-	color: #669999;
+  text-align: center;
+  margin: 3%;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #669999;
 }
 
 #portfolio-title {
-	text-align: center;
-	margin: 3%;
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-	font-size: 30px;
-	font-weight: 500;
-	color: #669999;
+  text-align: center;
+  margin: 3%;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #669999;
 }
 
 #contact-title {
-	text-align: center;
-	margin: 0% 3% 3%;
-	padding: 3% 0% 0%;
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-	font-size: 30px;
-	font-weight: 500;
-	color: #669999;
+  text-align: center;
+  margin: 0% 3% 3%;
+  padding: 3% 0% 0%;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #669999;
 }
 
 #email-text {
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
   text-align: center;
 }
@@ -151,56 +166,36 @@ blockquote:after {
 /********************** NAVIGATION **********************/
 /*******************************************************/
 .navigation {
-	text-align: center;
-	color: white;
-	font-family: 'Pacifico', cursive;
-	font-size: 30px;
-	margin: 1%;
-	padding: 1% 1% 12%;
-	list-style: none outside none;
-	/* -webkit-filter:blur (5px) brightness(110%); */
-}
-
-.navigation a {
-	color: white;
-	text-decoration: none;
-}
-
-.navigation li {
-	display: inline-block;
+  text-align: center;
+  color: white;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  margin: 1%;
+  padding: 1% 1% 12%;
+  list-style: none outside none;
 }
 
 .nav-links {
-	display: inline-block;
-	margin: 3%;
-	padding: 5px 10px;
-	border: 3px solid LightGrey;
+  display: inline-block;
+  margin: 3%;
+  padding: 5px 10px;
+  border: 3px solid LightGrey;
 }
 
 .nav-links a {
-	color: white;
-	text-decoration: none;
-}
-
-#read-more-button {
-  display: inline-block;
-  text-align: center;
-  color: gray;
-  font-family: 'Pacifico', cursive;
-  font-size: 20px;
+  color: white;
   text-decoration: none;
-  padding: 1% 25%;
 }
 
-#see-more-button {
+#button {
   display: block;
   text-align: center;
   color: gray;
   font-family: 'Pacifico', cursive;
   font-size: 20px;
   text-decoration: none;
-  padding: 1% 5%;
-  margin: 1% 30%;
+  padding: 1% 10%;
+  margin: 2% 25%;
 }
 
 /*********************************************************/
@@ -208,48 +203,54 @@ blockquote:after {
 /*******************************************************/
 
 .section-1 {
-	background: url(picture_library/WhereWillTheRoadTakeYou.png) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+  background: url(picture_library/WhereWillTheRoadTakeYou.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .section-2 {
-	background: white;
+  background: white;
 }
 
 .section-3 {
-	background: url(picture_library/hairy-smoke.png) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+  background: url(picture_library/hairy-smoke.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.section-4 {
-	background: white;
+.container {
+  width: 100%;
+  position: relative;
 }
 
 .section-5 {
-	background: url(picture_library/gray_textured_bg.png);
+  background: url(picture_library/gray_textured_bg.png);
+  background-color: #f5f5f5;
+  padding-bottom: 5%;
 }
 
 aside {
-  	float: right;
-  	margin: 0% 15%;
-  	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-  	text-align: center;
-  	color: black;
-  	background: url(picture_library/gray_textured_bg.png);
+    float: right;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    background: url(picture_library/gray_textured_bg.png);
+    background-color: #f5f5f5;
+  margin-right: 15%;
 }
 
 #email-form {
- 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
- 	font-size: 16px;
- 	margin: 0% 35%;
-	background: url(picture_library/gray_textured_bg.png);
-	position: absolute;
+  float: left;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 16px;
+  background: url(picture_library/gray_textured_bg.png);
+  background-color: #f5f5f5;
+    margin-left: 35%;
 }
 
 #submit-button {
@@ -258,95 +259,47 @@ aside {
   border-radius: 5px;
 }
 
-#final {
-  clear: both;
-  padding: 5%;
-  background: url(picture_library/gray_textured_bg.png);
-}
-
 /*********************************************************/
 /********************** Text-Boxes **********************/
 /*******************************************************/
 
 .text-box {
-	border: 3px double LightGrey;
-	margin: 1% 15% 3%;
+  margin: 1% 9% 3%;
 }
 
 .text-box img {
-	float: left;
-	width: 25%;
-	margin: 10% 2% 5% 2%;
-	border-radius: 10px;
- 	-webkit-box-shadow: 0 10px 6px -6px #777;
-	-moz-box-shadow: 0 10px 6px -6px #777;
-	box-shadow: 0 10px 6px -6px #777;
-	/*max-height: 100px;
-	max-width: 100px;*/
-}
-
-#vertical-line {
-	border-right: thin solid LightGrey;
-  	float: left;
-  	margin: 5% 1% 5% 0%;
-  	padding: 0% 0% 45% 0%;
+  /*float: left;
+  margin: 10% 2% 5% 2%;
+  border-radius: 10px;*/
+  width: 20%;
+  margin: 1%;
+  float: right; /*This is a new addition*/
+  border-radius: 50%;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
 }
 
 #about-text {
-	border: none;
-	margin: 2%;
-	font-family: sans-serif;
-	color: black;
+  border: none;
+  margin: 2%;
+  font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+  color: black;
 }
 
 .about-list-items {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
 }
 
 #centered {
-	text-align: center;
-}
-
-.portfolio-item {
-	width: 200px;
-	height: 200px;
-	display: inline-block;
-	margin: 4%;
-    border-radius: 10px;
- 	-webkit-box-shadow: 0 10px 6px -6px #777;
-	-moz-box-shadow: 0 10px 6px -6px #777;
-	box-shadow: 0 10px 6px -6px #777;
-}
-
-#item-1 {
-	background: url(picture_library/portfolio_thumbs/ThisWebsite.png) no-repeat top left;
-
-}
-
-#item-2 {
-	background: url(picture_library/portfolio_thumbs/Kairos-Site.png) no-repeat top left;
-}
-
-#item-3 {
-	background: url(picture_library/portfolio_thumbs/GSR-Illustration.png) no-repeat top left;
-}
-
-#item-4 {
-	background: url(picture_library/portfolio_thumbs/Love-Tails-Site.png) no-repeat top left;
-}
-
-#item-5 {
-	background: url(picture_library/portfolio_thumbs/GSR-Illustration.png) no-repeat top left;
-}
-
-#item-6 {
-	background: url(picture_library/portfolio_thumbs/BBB-Marketing-Materials.png) no-repeat top left;
+  text-align: center;
 }
 
 #contact-text {
-	color: black;
-	text-align: center;
+  color: black;
+  text-align: center;
 }
 
 /*********************************************************/
@@ -399,6 +352,211 @@ aside {
   }
 }
 
+/*********************************************************/
+/*********************** Portfolio **********************/
+/*******************************************************/
+.main > p {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.og-grid {
+  list-style: none;
+  padding: 20px 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.og-grid li {
+  display: inline-block;
+  margin: 10px 5px 0 5px;
+  vertical-align: top;
+  height: 250px;
+}
+
+.og-grid li > a,
+.og-grid li > a img {
+  border: none;
+  outline: none;
+  display: block;
+  position: relative;
+}
+
+.og-grid li.og-expanded > a::after {
+  top: auto;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: LightGrey;
+  border-width: 15px;
+  left: 50%;
+  margin: -20px 0 0 -15px;
+}
+
+.og-expander {
+  position: absolute;
+  background: LightGrey;
+  top: auto;
+  left: 0;
+  width: 100%;
+  margin-top: 10px;
+  text-align: left;
+  height: 0;
+  overflow: hidden;
+}
+
+.og-expander-inner {
+  padding: 50px 30px;
+  height: 100%;
+}
+
+.og-close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.og-close::before,
+.og-close::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  height: 1px;
+  background: #888;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.og-close::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.og-close:hover::before,
+.og-close:hover::after {
+  background: #333;
+}
+
+.og-fullimg,
+.og-details {
+  width: 50%;
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.og-details {
+  padding: 0 40px 0 20px;
+}
+
+.og-fullimg {
+  text-align: center;
+}
+
+.og-fullimg img {
+  display: inline-block;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.og-details h3 {
+  font-size: 40px;
+  padding: 40px 0 10px;
+  margin-bottom: 10px;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-weight: 500;
+  color: #669999;
+}
+
+.og-details p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #7d7d7d;
+}
+
+.og-details a {
+  font-weight: 700;
+  font-size: 16px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border: 3px solid #333;
+  display: inline-block;
+  margin: 30px 0 0;
+  outline: none;
+}
+
+.og-details a::before {
+  content: '\2192';
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.og-details a:hover {
+  border-color: #999;
+  color: #999;
+}
+
+.og-loading {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: LightGrey;
+  box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  -webkit-animation: loader 0.5s infinite ease-in-out both;
+  -moz-animation: loader 0.5s infinite ease-in-out both;
+  animation: loader 0.5s infinite ease-in-out both;
+}
+
+@-webkit-keyframes loader {
+  0% { background: LightGrey; }
+  33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px LightGrey; }
+  66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px LightGrey, -15px 30px 1px #ccc; }
+}
+
+@-moz-keyframes loader {
+  0% { background: LightGrey; }
+  33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px LightGrey; }
+  66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px LightGrey, -15px 30px 1px #ccc; }
+}
+
+@keyframes loader {
+  0% { background: LightGrey; }
+  33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px LightGrey; }
+  66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px LightGrey, -15px 30px 1px #ccc; }
+}
+
+@media screen and (max-width: 830px) {
+
+  .og-expander h3 { font-size: 32px; }
+  .og-expander p { font-size: 13px; }
+  .og-expander a { font-size: 12px; }
+
+}
+
+@media screen and (max-width: 650px) {
+
+  .og-fullimg { display: none; }
+  .og-details { float: none; width: 100%; }
+  
+}
 
 
 

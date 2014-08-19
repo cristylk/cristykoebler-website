@@ -52,21 +52,15 @@ input, select { vertical-align: middle; }
 /*********************************************************/
 /********************** Custom CSS **********************/
 /*******************************************************/
-p {
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-	color: black;
-}
-
 h1 {
-	margin: 3%;
+	margin: 0% 3% 3%;
+  padding: 3% 0% 0%;
 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 	font-size: 30px;
 	font-weight: 500;
 	color: #669999;
   text-align: center;
 }
-
-
 /*********************************************************/
 /************************ HEADER ************************/
 /*******************************************************/
@@ -92,13 +86,9 @@ header {
 /*******************************************************/
 #navigation {
 	text-align: center;
-	color: white;
-	font-family: 'Pacifico', cursive;
 	font-size: 30px;
 	padding: 0% 0% 3% 0%;
 	list-style: none outside none;
-  text-decoration: none;
-	/* -webkit-filter:blur (5px) brightness(110%); */
 }
 
 .nav-links {
@@ -123,10 +113,11 @@ header {
 
 aside {
   float: right;
-  margin: 0% 15%;
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
   text-align: center;
   color: black;
+  margin-right: 15%;
 }
 
 .icons {
@@ -134,10 +125,10 @@ aside {
 }
 
 #email-form {
- font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
- font-size: 16px;
- margin: 0% 35%;
- position: absolute;
+  float: left;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 16px;
+  margin-left: 35%;
 }
 
 #submit-button {
@@ -146,27 +137,24 @@ aside {
   border-radius: 5px;
 }
 
-#final {
-  clear: both;
-  padding: 7%;
-}
-
 /*********************************************************/
 /********************** Text-Boxes **********************/
 /*******************************************************/
 
 #about-text {
-	text-align: center;
-	margin: 2%;
-  font-size: 20px;
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	color: black;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
 }
 
+
 #email-text {
-  font-family: 'Pacifico', cursive;
-  font-size: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
   text-align: center;
 }
+
 
 
 /*********************************************************/

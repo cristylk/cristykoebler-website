@@ -8,11 +8,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
   <title>Cristy Koebler | Marketing and Web Development Portfolio</title>
-  <meta name="description" content="">
+  <meta name="description" content="Cristy Koebler | Marketing and Web Development Portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Amatic+SC|Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Amatic+SC|Pacifico|Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
+  <script src="/jquery_plugins/grid/modernizr.custom.js"></script>
 </head>
 
 <body>
@@ -36,24 +37,20 @@
 	<section class="section-2">
 		<h3 id="about-title">ABOUT</h3>
 
-		<div class="text-box">
-			<div>
-				<img src="http://cristykoebler.com/picture_library/CristyK.PNG" alt="Me" />
-			</div>
+		<!--<h2 id="centered">hi, I'm Cristy</h2>-->
 
-			<div id="vertical-line">
-				<p><br></p>
-			</div>
+		<div class="text-box">
+			<!--<div><img src="http://cristykoebler.com/picture_library/CristyK.PNG" alt="Me" /></div>-->
 
 			<div id="about-text">
-				<h2>hi, I'm Cristy</h2><br>
+				<h2 id="centered">hi, I'm Cristy</h2>
 
-				<h4>A few things about me:</h4><br>
+				<h4>A few things about me:</h4>
 
 				<ul>
 					<li class="about-list-items">My love of cheese knows no bounds.</li>
 					<li class="about-list-items">I'm freakishly organized. My to-do lists are epic.</li>
-					<li class="about-list-items">I really enjoy learning new things and have been in one class or another since preschool. Check out my progress (and detours) <a href="http://cristykoebler.com/timeline.html">here.</a></li>
+					<li class="about-list-items">I really enjoy learning new things and have been in one class or another since preschool. Check out my progress (and detours) <a href="http://cristykoebler.com/timeline.html" target="_blank">here.</a></li>
 				</ul><br>
 
 				<p>Perhaps it seems marketing is my bread and butter: went to college for marketing, got a job in marketing, started a company in marketing…but there’s more to me than that! I’m a storyteller. An analyst. A web designer. An entrepreneur.<br><br>
@@ -63,7 +60,7 @@
 				Now I'm on the path to web developer. Where will the road take you?<br>
 				</p>
 
-				<a class="nav-links" id="read-more-button" href="http://cristykoebler.com/about.html">Read More</a>
+				<a class="nav-links" id="button" href="http://cristykoebler.com/about.html">Read More</a>
 			</div>
 		</div>
 	</section>
@@ -74,24 +71,37 @@
 			<p id="citation"> — Albert Einstein</p>
 		</div>
 	</section>	
-	
-	<section class="section-4">	
-		<h3 id="portfolio-title">PORTFOLIO</h3>
-		
-		<p id="centered">Projects I've worked on</p>
 
-		<div class="text-box">
-			<a class="portfolio-item" id="item-1" href="http://cristykoebler.com/portfolio.html" title="This Website"></a>
-			<a class="portfolio-item" id="item-2" href="http://cristykoebler.com/portfolio.html" title="Kairos Instruments Website"></a>
-			<a class="portfolio-item" id="item-4" href="http://cristykoebler.com/portfolio.html" title="Love Tails Pet Care"></a>
-			<!--<a class="portfolio-item" id="item-3" href="http://cristykoebler.com/portfolio.html" title="Portfolio item"></a>
-			<a class="portfolio-item" id="item-5" href="http://cristykoebler.com/portfolio.html" title="Portfolio item"></a>
-			<a class="portfolio-item" id="item-6" href="http://cristykoebler.com/portfolio.html" title="Portfolio item"></a>Currently not including these-->
+	<div class="container">	
 
-			<a class="nav-links" id="see-more-button" href="http://cristykoebler.com/portfolio.html">See More</a>
-		</div>
-		<!--<h2 id="top-button"><a data-scroll href="#top">TOP</a></h2>	-->
-	</section>
+    	<div class="main">
+
+    		<h3 id="portfolio-title">PORTFOLIO</h3>
+
+    		<p id="centered">Projects I've worked on</p>
+
+    		<ul id="og-grid" class="og-grid">
+
+    			<li>
+          			<a href="http://cristykoebler.com"  data-largesrc="/picture_library/portfolio_thumbs/Lightbox/CristyKoeblerDotCom.png" data-title="CristyKoebler.com" data-description="This website, of course! Everything is coded from scratch - HTML, CSS, PHP, jQuery, and Javascript, to name a few.">
+            		<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/250x250/CristyKoeblerDotCom250.png" alt="This Website" /></a>
+        		</li>
+
+        		<li>
+          			<a href="http://www.kairosinstruments.com" data-largesrc="/picture_library/portfolio_thumbs/Lightbox/KairosInstrumentsDotCom.png" data-title="Kairos Instruments Website" data-description="Built on a Wordpress theme, this site was customized using CSS and PHP.">
+            		<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/250x250/KairosInstrumentsDotCom250.png" alt="Kairos Instruments Website" /></a>
+        		</li>
+
+        		<li>
+          			<a href="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/LoveTailsDotCom.png" data-largesrc="/picture_library/portfolio_thumbs/Lightbox/LoveTailsDotCom.png" data-title="Love Tails Pet Care Website" data-description="Built on a Wordpress theme, this site was customized using CSS and PHP. The site included a blog so that the client could post updates about her dog sitting business.">
+            		<img src="http://cristykoebler.com/picture_library/portfolio_thumbs/Lightbox/250x250/LoveTailsDotCom250.png" alt="Love Tails Pet Care" /></a>
+        		</li>
+
+        	</ul>
+        </div>
+
+       <a class="nav-links" id="button" href="http://cristykoebler.com/portfolio.html">See More</a>
+   	</div>
 	
 	<section class="section-5">
 
@@ -138,13 +148,13 @@
 
 			<aside>Or find me here
 				<div class="icons">
-					<a href="http://www.linkedin.com/in/cristykoebler"><img src="picture_library/icons/linkedin-32.png" alt="LinkedIn icon" border="0" target="_blank"></a>
+					<a href="http://www.linkedin.com/in/cristykoebler" target="_blank"><img src="picture_library/icons/linkedin-32.png" alt="LinkedIn icon" border="0"></a>
 				</div>
 				<div class="icons">
-					<a href="http://twitter.com/CristyKoebler"><img src="picture_library/icons/twitter-32.png" alt="Twitter icon" border="0" target="_blank"></a>
+					<a href="http://twitter.com/CristyKoebler" target="_blank"><img src="picture_library/icons/twitter-32.png" alt="Twitter icon" border="0"></a>
 				</div>
 				<div class="icons">
-					<a href="http://github.com/cristylk"><img src="picture_library/icons/github-32.png" alt="GitHub icon" border="0" target="_blank"></a>
+					<a href="http://github.com/cristylk" target="_blank"><img src="picture_library/icons/github-32.png" alt="GitHub icon" border="0"></a>
 				</div>
 			</aside>
 			<br><br><br><br><br><br><br><br>
@@ -153,7 +163,6 @@
 		<!--<h2 id="top-button"><a data-scroll href="#top">TOP</a></h2>-->
 	</section>	
 
-	<section id="final"></section>
 	<a href="#0" class="cd-top">Top</a>
     
     <!--<footer>
@@ -164,23 +173,12 @@
 
 	<script src="http://cristykoebler.com/jquery_plugins/smooth-scroll-master/dist/js/smooth-scroll.js"></script>
 
-	<script src="http://cristykoebler.com/jquery_plugins/stickUp-master/stickUp.min.js"></script>
-
-	<script src="http://cristykoebler.com/jquery_plugins/fade_over/fade_over.js"></script>
+	<script src="http://cristykoebler.com/jquery_plugins/grid/grid.js"></script>
 
 	<script>
     	smoothScroll.init({
     		speed: 300
     	});
-	</script>
-
-	<script type="text/javascript"> 
-	//initiating jQuery 
-	/*	jQuery(function($) { 
-			$(document).ready( function() { //enabling stickUp on the '.navbar-wrapper' class 
-				$('.navigation').stickUp(); 
-			}); 
-		}); */
 	</script>
 
 	<script>
@@ -215,6 +213,12 @@
 	</script>
 
 	<script>
+      $(function() {
+        Grid.init();
+      });
+  	</script>
+
+	<script>
   		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -223,16 +227,6 @@
   		ga('create', 'UA-26194880-1', 'auto');
   		ga('send', 'pageview');
 
-	</script>
-
-	<script>
-	$(".portfolio-item").MyFadeOverImage({
-  		normalAlpha:0.8,
-  		hoverAlpha: 1,
-  		normalToneColor:"#fff", //smog effect
-  		fadeInSpeed: "500",
-  		fadeOutSpeed: "500"
-	});
 	</script>
 
 </body>
